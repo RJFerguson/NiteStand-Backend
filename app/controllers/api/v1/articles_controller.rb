@@ -9,6 +9,15 @@ class Api::V1::ArticlesController < ApplicationController
     render json: Article.find(params[:id])
   end
 
+   def search
+    term = params[:term] || nil
+    articles = []
+    articles = Article.where('headline LIKE ? '\
+    'OR lead_paragraph LIKE ? '\
+    'OR pub_date LIKE ?', "%#{term}%", "%#{term}%", "%#{term}%").limit(50) if term
+    render json: articles
+  end
+
   # def create
   #   name = params["cocktail"]["name"]
   #   description = params["cocktail"]["description"]

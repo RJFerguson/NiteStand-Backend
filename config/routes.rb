@@ -3,9 +3,12 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :articles
+      resources :articles do
+        get 'search', on: :collection
+      end
       resources :reading_lists
       resources :reading_list_articles
+      
     end
   end
 end
