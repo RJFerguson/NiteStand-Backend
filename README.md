@@ -1,24 +1,7 @@
-# README
+# Introduction
+A fast, searchable, single-page catalogue of archival NYT articles. 'Reading List' feature that allows users to save selected articles into persistable lists for future reference.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Site in Action
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img src='https://github.com/iwpeifer/NiteStand-client/raw/master/src/images/screenshot.png
+'/>
